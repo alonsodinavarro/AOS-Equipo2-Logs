@@ -1,0 +1,44 @@
+title: Log
+x-stoplight:
+  id: baqi44ewa3upv
+type: object
+examples:
+  - id: 1
+    fecha: '2019-08-24'
+    mensaje: string
+    prioridad: Alta
+    usuario: user@example.com
+    subsistema: 1
+properties:
+  id:
+    type: integer
+    minimum: 1
+    maximum: 99999
+  fecha:
+    type: string
+    format: date
+    minLength: 1
+  mensaje:
+    type: string
+    minLength: 1
+  prioridad:
+    type: string
+    enum:
+      - Alta
+      - Baja
+    minLength: 1
+  usuario:
+    type: string
+    format: email
+    minLength: 1
+  subsistema:
+    type: integer
+    minimum: 1
+    maximum: 7
+required:
+  - id
+  - fecha
+  - mensaje
+  - prioridad
+  - usuario
+  - subsistema
