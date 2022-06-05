@@ -30,3 +30,4 @@ Podemos descargar el fichero .zip y extraerlo o realizar un git clone desde nues
 Para la simulación del servicio se crean los 3 contenedores explicados anteriormente.
 Desde Postman podremos realizar todas las peticiones necesarias para probar el servicio.
    
+### Imagen de nuestro servicio.
