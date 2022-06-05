@@ -17,7 +17,7 @@ En cuanto al método **POST** los atributos incluidos han sido los siguientes: f
 Se adjuntan pruebas de todos los métodos y responses posibles en el archivo `openapi.yaml`.
 
 El servicio está compuesto por 3 contenedores: <br/>
-**- Proxy:** realiza redirecciones. Funciona recibiendo las peticiones al puerto 80 y todo lo que venga con /api/v1/ se lo redirecciona al contenedor con el Backend. 
+**- Proxy:** realiza redirecciones. Funciona recibiendo las peticiones al puerto 80 y todo lo que venga con /api/v1/ se lo redirecciona al contenedor con el Backend. <br/>
 **- Backend:** encargado de los mocks para generar las pruebas de la API. <br/>
 **- Frontend:** contenedor que muestra una interfaz gráfica de la API para el usuario en el puerto 8000. Permite realizar peticiones de prueba y consultar su especificación. <br/>
 
