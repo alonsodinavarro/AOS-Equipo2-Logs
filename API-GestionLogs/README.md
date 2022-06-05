@@ -21,8 +21,7 @@ El servicio está compuesto por 3 contenedores: <br/>
 **- Backend:** encargado de los mocks para generar las pruebas de la API. <br/>
 **- Frontend:** contenedor que muestra una interfaz gráfica de la API para el usuario en el puerto 8000. Permite realizar peticiones de prueba y consultar su especificación. <br/>
 
-## Instrucciones para poner en marcha y probar el servicio.
-### Despliegue 
+### Instrucciones para poner en marcha y probar el servicio.
 **1.** Obtenemos el fichero desde la URL: https://github.com/alonsodinavarro/AOS-Equipo2-Logs <br/>
 Podemos descargar el fichero .zip y extraerlo o realizar un git clone desde nuestro terminal. <br/>
 **2.** Abrimos un terminal y nos situamos en la carpeta donde hemos descargado al repositorio, o bien abrimos el terminal directamente desde la ruta del proyecto. Desde este terminal iniciaremos los servicios. <br/>
