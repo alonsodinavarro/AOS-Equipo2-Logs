@@ -24,10 +24,27 @@ El servicio está compuesto por 3 contenedores: <br/>
 ### Instrucciones para poner en marcha y probar el servicio.
 **1.** Obtenemos el fichero desde la URL: https://github.com/alonsodinavarro/AOS-Equipo2-Logs <br/>
 Podemos descargar el fichero .zip y extraerlo o realizar un git clone desde nuestro terminal. <br/>
-**2.** Abrimos un terminal y nos situamos en la carpeta donde hemos descargado al repositorio, o bien abrimos el terminal directamente desde la ruta del proyecto. Desde este terminal iniciaremos los servicios. <br/>
+**2.** Abrimos un terminal y nos situamos en la carpeta donde hemos descargado al repositorio (comando `cd [<ruta>]`), o bien abrimos el terminal directamente desde la ruta del proyecto. Desde este terminal iniciaremos los servicios. <br/>
 **3.** Ejecutamos el siguiente comando: `docker compose -f ./docker-compose.yaml up -d` <br/>
 **4.** Si todo ha funcionado correctamente deberíamos poder acceder a la URL: http://127.0.0.1:8000/ <br/>
 Para la simulación del servicio se crean los 3 contenedores explicados anteriormente.
 Desde Postman podremos realizar todas las peticiones necesarias para probar el servicio.
    
 ### Imagen de nuestro servicio.
+La aplicación desarrollada se despliega sobre una imagen de Node (la última versión) y la persistencia se realiza utilizando un fichero json.
+Podemos encontrar la imagen en el siguiente enlace: https://hub.docker.com/r/alonsodinavarro/logs_api_equipo2 <br/>
+docker image build -t <nombre> .
+
+### Integración del resto de servicios mediante Docker Compose.
+**1. Gestión de Trabajos.** <br/>
+   Se levanta el servicio pero la imagen no está bien estructura por lo que al acceder a se muestra un error. <br/>
+**2. Gestión de Recambios.** <br/>
+**3. Gestión de Vehículos (equipo 4).** <br/>
+**4. Gestión de Notificaciones.** <br/>
+**5. Gestión de Clientes.** <br/>
+**6. Gestión de Vehículos (equipo 7).** <br/>
+**7. Gestión de Facturas (euqipo 8).** <br/>
+**8. Gestión de Facturas (equipo 94).** <br/>
+   
+### Despliegue mediante Kubernetes.
+Hemos generado los ficheros `.yaml` correspondientes al fichero `docker-compose.yml` de cada servicio utilizando la herramienta Kompose.
